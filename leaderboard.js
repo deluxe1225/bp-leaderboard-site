@@ -1,6 +1,28 @@
 window.LEADERBOARD = {
-  "updatedAt": "2025-08-23 10:06",
+  "updatedAt": "2025-08-23 12:56",
   "players": [
+    {
+      "user": "Anonymous",
+      "level": 4,
+      "xp": 27,
+      "nextXp": 140,
+      "totalXp": 327,
+      "badges": [
+        "sub"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "pakagaia",
+      "level": 3,
+      "xp": 43,
+      "nextXp": 125,
+      "totalXp": 243,
+      "badges": [
+        "vip"
+      ],
+      "avatar": ""
+    },
     {
       "user": "santosss1_0",
       "level": 3,
@@ -11,7 +33,19 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "Anonymous",
+      "user": "fablopss",
+      "level": 2,
+      "xp": 56,
+      "nextXp": 112,
+      "totalXp": 156,
+      "badges": [
+        "sub",
+        "mod"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "bakardipt",
       "level": 2,
       "xp": 50,
       "nextXp": 112,
@@ -75,26 +109,23 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "fablopss",
+      "user": "a_saika",
       "level": 1,
-      "xp": 34,
+      "xp": 25,
       "nextXp": 100,
-      "totalXp": 34,
+      "totalXp": 25,
       "badges": [
-        "sub",
         "mod"
       ],
       "avatar": ""
     },
     {
-      "user": "a_saika",
+      "user": "kmr__759",
       "level": 1,
-      "xp": 21,
+      "xp": 20,
       "nextXp": 100,
-      "totalXp": 21,
-      "badges": [
-        "mod"
-      ],
+      "totalXp": 20,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -103,6 +134,15 @@ window.LEADERBOARD = {
       "xp": 20,
       "nextXp": 100,
       "totalXp": 20,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "oprimopedro",
+      "level": 1,
+      "xp": 1,
+      "nextXp": 100,
+      "totalXp": 1,
       "badges": [],
       "avatar": ""
     }
