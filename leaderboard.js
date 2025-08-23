@@ -1,5 +1,5 @@
 window.LEADERBOARD = {
-  "updatedAt": "2025-08-23 09:47",
+  "updatedAt": "2025-08-23 10:00",
   "players": [
     {
       "user": "fablopss",
