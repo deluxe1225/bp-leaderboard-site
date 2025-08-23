@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Battle Pass • LEADERBOARD</title>
+
+  <!-- ====== Estilo Fortnite Dark/Neo + Burbank ====== -->
+  <style>
+    @font-face {
+      font-family: "Burbank";
+      src: local("Burbank Big Condensed Bold"), local("Burbank");
+      font-weight: 700;
+      font-style: normal;
+    }
+    :root{
+      --bg-1:#0b1220;
+      --bg-2:#0e1630;
+      --card:#121a36;
+      --stroke:#1f2b5a;
+      --text:#e8eeff;
+      --muted:#9bb0ff;
+      --accent:#5ad5ff;
+      --accent-2:#8a5cff;
+      --warning:#ffcc00;
+      --danger:#ff3b3b;
+      --good:#39ff88;
+      --avatar-ring:#ff2a2a;
+      --glow:#5ad5ff;
+    }
+    *{ box-sizing:border-box }
+    html,body{ height:100% }
+    body{
+      margin:0;
+      font-family: "Burbank", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 20% -10%, #1b2b63 0%, transparent 60%),
+                  radial-gradient(1000px 500px at 120% 0%, #3a1c6b 0%, transparent 60%),
+                  linear-gradient(#0a0f1f, #090e1b 40%, #0a0e1a 100%);
+      min-height:100%;
+    }
+    .wrap{ max-width:1200px; margin:32px auto; padding:0 16px }
+
+    .header{ display:flex; align-items:center; gap:16px; flex-wrap:wrap }
+    .title{
+      font-size:42px; font-weight:900; letter-spacing:1px;
+      display:flex; align-items:center; gap:12px;
+      text-shadow:0 2px 0 #000, 0 0 18px rgba(90,213,255,.35);
+    }
+    .pill{
+      padding:6px 10px; border-radius:10px; font-size:14px;
+      background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#021126;
+      font-weight:900; box-shadow:0 4px 18px rgba(90,213,255,.25);
+    }
+
+    .toolbar{ margin-top:18px; display:flex; gap:10px; flex-wrap:wrap; align-items:center }
+    input[type="search"]{
+      background:#0c1330; color:var(--text); border:1px solid var(--stroke);
+      border-radius:12px; padding:10px 14px; width:260px; outline:none;
+    }
+    select,button{
+      background:linear-gradient(180deg, #15204b, #0f1739);
+      color:var(--text); border:1px solid var(--stroke);
+      padding:10px 14px; border-radius:12px; font-weight:700; cursor:pointer;
+    }
+    button.primary{
+      background:linear-gradient(180deg, #29a2ff, #1376c7);
+      border:0; box-shadow:0 6px 18px rgba(41,162,255,.35);
+    }
+    .meta{ margin-top:8px; color:var(--muted); font-size:14px }
+
+    .cards{ display:grid; grid-template-columns: repeat(3,1fr); gap:16px; margin-top:22px }
+    .card{
+      background: linear-gradient(180deg,#0d1531,#0a1127);
+      border:1px solid var(--stroke); border-radius:18px; padding:16px;
+      box-shadow:0 10px 25px rgba(0,0,0,.35);
+    }
+    .card .toprow{ display:flex; align-items:center; gap:12px }
+    .rank-badge{
+      width:34px; height:34px; border-radius:10px; font-weight:900;
+      display:grid; place-items:center;
+      background:linear-gradient(135deg,#3452ff,#8a5cff);
+      border:1px solid #5161ff;
+      box-shadow:0 0 12px rgba(138,92,255,.35) inset;
+    }
+    .userbox{ display:flex; align-items:center; gap:10px; position:relative }
+    .avatar{
+      width:46px; height:46px; border-radius:50%;
+      border:2px solid var(--avatar-ring); object-fit:cover;
+      box-shadow:0 0 0 2px rgba(0,0,0,.4);
+      cursor:pointer;
+    }
+    .crown{
+      position:absolute; width:28px; height:28px; left:-6px; top:-8px; pointer-events:none;
+      filter: drop-shadow(0 0 8px rgba(255,215,0,.7));
+      animation:crownFloat 1.6s ease-in-out infinite;
+    }
+    @keyframes crownFloat{
+      0%{ transform:translateY(0) rotate(-8deg) }
+      50%{ transform:translateY(-3px) rotate(-5deg) }
+      100%{ transform:translateY(0) rotate(-8deg) }
+    }
+    .username{ font-size:20px; font-weight:900 }
+    .badges{ display:flex; gap:6px; font-size:18px }
+    .bar{
+      margin-top:10px; height:12px; background:#0c1430; border:1px solid var(--stroke);
+      border-radius:10px; overflow:hidden; position:relative;
+    }
+    .bar > i{
+      display:block; height:100%; width:0%;
+      background:linear-gradient(90deg,#ffc84a,#ff6b00);
+      box-shadow:inset 0 0 10px rgba(255,203,0,.6), 0 0 8px rgba(255,140,0,.4);
+      transition: width .4s ease;
+    }
+    .btn-mini{
+      margin-left:auto; padding:8px 10px; border-radius:10px; font-size:13px;
+      background:linear-gradient(180deg,#1e294f,#141d3c); border:1px solid var(--stroke)
+    }
+
+    .table{
+      margin-top:18px; overflow:hidden; border-radius:16px; border:1px solid var(--stroke);
+      background:linear-gradient(180deg,#0d1531,#0a1127);
+    }
+    table{ width:100%; border-collapse:collapse }
+    th,td{ padding:12px 14px; border-bottom:1px solid rgba(255,255,255,.04) }
+    thead th{ background:#0f1841; text-align:left; font-size:14px; color:#b8c6ff }
+    tbody tr{ transition:background .2s ease }
+    tbody tr:hover{ background:#0d1539 }
+    td.usercell{ display:flex; align-items:center; gap:10px }
+
+    .row-highlight{ outline:2px solid var(--glow); position:relative }
+    .row-highlight::after{
+      content:""; position:absolute; inset:0; box-shadow:0 0 24px rgba(90,213,255,.35); pointer-events:none;
+    }
+
+    .footer{ margin:40px 0 20px; text-align:center; color:var(--muted); font-size:14px }
+    .footer strong{ color:var(--text) }
+    .badge-legend{ margin-top:10px; font-size:13px; color:#9db2ff }
+  </style>
+
+  <!-- NÃO carregamos ficheiros aqui; vamos injetar com cache-buster no JS -->
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="title"> Battle Pass <span class="pill">LEADERBOARD</span></div>
+    </div>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Procurar utilizador…" />
+      <select id="sort">
+        <option value="totalxp">Ordenar: Total XP</option>
+        <option value="level">Ordenar: Nível</option>
+        <option value="xp">Ordenar: XP atual</option>
+        <option value="name">Ordenar: Nome</option>
+      </select>
+      <button id="btn-refresh" class="primary">Atualizar</button>
+      <button id="btn-me">Me</button>
+      <button id="btn-setme" class="btn-mini">Definir “Me”</button>
+      <span id="meta" class="meta">Atualizado: —  Jogadores: —</span>
+    </div>
+
+    <div id="cards" class="cards"></div>
+
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th style="width:60px">#</th>
+            <th>Utilizador</th>
+            <th style="width:120px">Nível</th>
+            <th style="width:160px">XP</th>
+            <th style="width:140px">Total XP</th>
+            <th style="width:140px">Badges</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="badge-legend">
+      Badges: 👻 Mod • 💎 VIP • ⭐ Sub • 🍿 Follower
+    </div>
+
+    <div class="footer">
+      Feito com ❤️ por <strong>FABLOPSS</strong> • Fortnite, Terror & Pipocas.
+    </div>
+  </div>
+
+  <script>
+    // =================== CONFIG ===================
+    const BADGE_MAP = { mod:"👻", vip:"💎", sub:"⭐", follower:"🍿" };
+    const getMe = () => localStorage.getItem("bp_me") || "fablopss";
+    const setMe = (u) => localStorage.setItem("bp_me", u);
+
+    let PLAYERS = [];
+    let _LB_UPDATED_AT = null;
+
+    // =================== UTILS ===================
+    const sleep = (ms)=> new Promise(r=>setTimeout(r,ms));
+    const normalizeLB = lb => Array.isArray(lb) ? lb : (lb?.players || lb?.data || []);
+    const readMeta = lb => lb?.updatedAt || lb?.meta?.updatedAt || null;
+    const emojiBadges = p => {
+      const b = p.badges || p.roles || {};
+      let keys = Array.isArray(b) ? b : Object.keys(b).filter(k => b[k]);
+      if (!keys.length && p.isSub) keys.push("sub");
+      return keys.map(k => BADGE_MAP[k] || "").filter(Boolean).join(" ");
+    };
+    const fmtXP = p => `${p.xp||0} / ${p.nextXp||p.neededXp||p.levelUpAt||100}`;
+    const getTotalXP = p => p.totalXp ?? p.totalXP ?? p.total_xp ?? 0;
+    const bySort = key => {
+      switch(key){
+        case "level": return (a,b)=> (b.level||0)-(a.level||0) || getTotalXP(b)-getTotalXP(a);
+        case "xp":    return (a,b)=> (b.xp||0)-(a.xp||0);
+        case "name":  return (a,b)=> a.user.localeCompare(b.user,'pt',{sensitivity:"base"});
+        default:      return (a,b)=> getTotalXP(b)-getTotalXP(a);
+      }
+    };
+    const twitchUrl = u => `https://twitch.tv/${encodeURIComponent(u)}`;
+
+    // Avatares: SEMPRE via avatars_helix.js
+    function avatarUrl(login){
+      login = (login||"").toLowerCase();
+      const map = window.AVATARS_HELIX || {};
+      return (map[login]?.url) || "assets/default.png";
+    }
+
+    // =================== RENDER ===================
+    function render(){
+      const q = (document.getElementById('search').value || "").trim().toLowerCase();
+      const sortKey = document.getElementById('sort').value;
+      let data = [...PLAYERS];
+      if (q) data = data.filter(p => p.user?.toLowerCase().includes(q));
+      data.sort(bySort(sortKey));
+
+      document.getElementById('meta').textContent =
+        `Atualizado: ${_LB_UPDATED_AT || new Date().toLocaleString()}  Jogadores: ${data.length}`;
+
+      const cards = document.getElementById('cards');
+      cards.innerHTML = "";
+      data.slice(0,3).forEach((p,idx)=>{
+        const percent = Math.min(100,Math.round(((p.xp||0)/(p.nextXp||p.neededXp||p.levelUpAt||100))*100));
+        const avatar = avatarUrl(p.user); // força a usar a nossa cache
+        const badges = emojiBadges(p);
+        const crownSVG = () => `<svg class="crown" viewBox="0 0 64 64"><path d="M8 46 L56 46 L52 22 L40 32 L32 18 L24 32 L12 22 Z" fill="url(#g)"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0%" stop-color="#FFE66D"/><stop offset="50%" stop-color="#FFD33D"/><stop offset="100%" stop-color="#FFB800"/></linearGradient></defs></svg>`;
+        cards.innerHTML += `
+          <div class="card">
+            <div class="toprow">
+              <div class="rank-badge">${idx+1}</div>
+              <div class="userbox">
+                <img class="avatar" src="${avatar}" data-user="${p.user}"/>
+                ${idx===0 ? crownSVG() : ""}
+                <div>
+                  <div class="username">${p.user}</div>
+                  <div class="meta">LVL ${p.level||0} • ${fmtXP(p)}</div>
+                  <div class="badges">${badges}</div>
+                </div>
+              </div>
+              <button class="btn-mini" data-open="${p.user}">Ver Perfil</button>
+            </div>
+            <div class="bar"><i style="width:${percent}%"></i></div>
+          </div>`;
+      });
+
+      const tbody = document.getElementById('tbody');
+      tbody.innerHTML = "";
+      data.forEach((p,i)=>{
+        const avatar = avatarUrl(p.user); // idem
+        tbody.innerHTML += `
+          <tr>
+            <td>${i+1}</td>
+            <td class="usercell">
+              <img class="avatar" src="${avatar}" data-user="${p.user}"/>
+              <span class="name">${p.user}</span>
+            </td>
+            <td>${p.level||0}</td>
+            <td>${fmtXP(p)}</td>
+            <td>${getTotalXP(p)}</td>
+            <td>${emojiBadges(p)}</td>
+          </tr>`;
+      });
+
+      document.querySelectorAll('[data-user]').forEach(el=>{
+        el.onclick=()=>window.open(twitchUrl(el.dataset.user),'_blank');
+      });
+      document.querySelectorAll('[data-open]').forEach(el=>{
+        el.onclick=()=>window.open(twitchUrl(el.dataset.open),'_blank');
+      });
+
+      highlightMe();
+    }
+
+    function highlightMe(){
+      const me = getMe().toLowerCase();
+      const rows = [...document.querySelectorAll('#tbody tr')];
+      const idx = rows.findIndex(r=>(r.querySelector('.name')?.textContent||"").toLowerCase()===me);
+      rows.forEach(r=>r.classList.remove('row-highlight'));
+      if(idx>=0){ rows[idx].classList.add('row-highlight'); rows[idx].scrollIntoView({behavior:'smooth',block:'center'}); }
+    }
+
+    // =================== LOAD ===================
+    async function loadAvatars(){
+      // injecta avatars_helix.js SEMPRE fresco (evita cache)
+      const old = document.querySelector('script[data-dyn="av"]');
+      if (old) old.remove();
+      try { delete window.AVATARS_HELIX; } catch {}
+      const s = document.createElement('script');
+      s.src = 'avatars_helix.js?cb=' + Date.now();
+      s.defer = true;
+      s.setAttribute('data-dyn','av');
+      document.head.appendChild(s);
+      for (let i=0;i<50;i++){ await sleep(100); if (window.AVATARS_HELIX) break; }
+    }
+
+    async function loadLeaderboard(){
+      // carrega leaderboard.js fresco
+      const old=document.querySelector('script[data-dyn="lb"]'); if(old) old.remove();
+      if(window.LEADERBOARD!==undefined) try{delete window.LEADERBOARD;}catch{}
+      const s=document.createElement('script');
+      s.src = 'leaderboard.js?cb=' + Date.now();
+
+      s.defer=true;
+      s.setAttribute('data-dyn','lb');
+      document.head.appendChild(s);
+      for(let i=0;i<50;i++){ await sleep(100); if(window.LEADERBOARD!==undefined) break; }
+      PLAYERS=normalizeLB(window.LEADERBOARD);
+      _LB_UPDATED_AT=readMeta(window.LEADERBOARD);
+
+      // GUARDA-CHUVA: se leaderboard.js trouxer p.avatar=unavatar,
+      // sobrescrevemos para usar SEMPRE a nossa cache.
+      PLAYERS = PLAYERS.map(p => {
+        const a = avatarUrl(p.user);
+        return { ...p, avatar:a, avatarUrl:a };
+      });
+    }
+
+    async function refreshAll(){ await Promise.all([loadAvatars(),loadLeaderboard()]); render(); }
+
+    // =================== EVENTOS ===================
+    document.getElementById('btn-refresh').onclick=refreshAll;
+    document.getElementById('search').oninput=render;
+    document.getElementById('sort').onchange=render;
+    document.getElementById('btn-setme').onclick=()=>{const v=prompt('User Twitch?',getMe()||''); if(v){setMe(v); render();}};
+    document.getElementById('btn-me').onclick=highlightMe;
+    setInterval(refreshAll,60000);
+
+    // =================== ARRANQUE ===================
+    (async()=>{
+      const usp=new URLSearchParams(location.search); if(usp.has('me')) setMe(usp.get('me'));
+      await refreshAll();
+    })();
+  </script>
+</body>
+</html>
