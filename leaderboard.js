@@ -1,6 +1,18 @@
 window.LEADERBOARD = {
-  "updatedAt": "2025-08-23 12:56",
+  "updatedAt": "2025-08-23 23:12",
   "players": [
+    {
+      "user": "fablopss",
+      "level": 14,
+      "xp": 58,
+      "nextXp": 436,
+      "totalXp": 1358,
+      "badges": [
+        "sub",
+        "mod"
+      ],
+      "avatar": ""
+    },
     {
       "user": "Anonymous",
       "level": 4,
@@ -9,6 +21,17 @@ window.LEADERBOARD = {
       "totalXp": 327,
       "badges": [
         "sub"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "a_Saika",
+      "level": 3,
+      "xp": 44,
+      "nextXp": 125,
+      "totalXp": 244,
+      "badges": [
+        "mod"
       ],
       "avatar": ""
     },
@@ -30,18 +53,6 @@ window.LEADERBOARD = {
       "nextXp": 125,
       "totalXp": 243,
       "badges": [],
-      "avatar": ""
-    },
-    {
-      "user": "fablopss",
-      "level": 2,
-      "xp": 56,
-      "nextXp": 112,
-      "totalXp": 156,
-      "badges": [
-        "sub",
-        "mod"
-      ],
       "avatar": ""
     },
     {
@@ -98,6 +109,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "fablopSs",
+      "level": 2,
+      "xp": 0,
+      "nextXp": 112,
+      "totalXp": 100,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "kassandra_c96",
       "level": 1,
       "xp": 42,
@@ -109,14 +129,12 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "a_saika",
+      "user": "a_Saika",
       "level": 1,
       "xp": 25,
       "nextXp": 100,
       "totalXp": 25,
-      "badges": [
-        "mod"
-      ],
+      "badges": [],
       "avatar": ""
     },
     {
@@ -144,6 +162,17 @@ window.LEADERBOARD = {
       "nextXp": 100,
       "totalXp": 1,
       "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "paulinhoopt",
+      "level": 1,
+      "xp": 1,
+      "nextXp": 100,
+      "totalXp": 1,
+      "badges": [
+        "vip"
+      ],
       "avatar": ""
     }
   ]
