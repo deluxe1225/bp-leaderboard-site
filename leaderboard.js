@@ -1,12 +1,12 @@
 window.LEADERBOARD = {
-  "updatedAt": "2025-08-24 18:19",
+  "updatedAt": "2025-08-25 12:42",
   "players": [
     {
       "user": "fablopss",
-      "level": 16,
-      "xp": 310,
-      "nextXp": 547,
-      "totalXp": 1810,
+      "level": 18,
+      "xp": 457,
+      "nextXp": 687,
+      "totalXp": 2157,
       "badges": [
         "sub",
         "mod"
@@ -14,7 +14,99 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "2b__ornot__2b",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [
+        "sub"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "araujo31lidl",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "fatherlyconveniencez2e",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "guicabral0202",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "gunblade_sis_",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "lixianisredcoat",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "mettabe",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "mimivives23",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "pedroluzestreams",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "perplera",
+      "level": 14,
+      "xp": 87,
+      "nextXp": 436,
+      "totalXp": 1387,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "ysn00p",
       "level": 14,
       "xp": 87,
       "nextXp": 436,
@@ -30,6 +122,17 @@ window.LEADERBOARD = {
       "totalXp": 327,
       "badges": [
         "sub"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "a_saika",
+      "level": 4,
+      "xp": 15,
+      "nextXp": 140,
+      "totalXp": 315,
+      "badges": [
+        "vip"
       ],
       "avatar": ""
     },
@@ -81,17 +184,6 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "a_Saika",
-      "level": 3,
-      "xp": 44,
-      "nextXp": 125,
-      "totalXp": 244,
-      "badges": [
-        "mod"
-      ],
-      "avatar": ""
-    },
-    {
       "user": "pakagaia",
       "level": 3,
       "xp": 43,
@@ -112,6 +204,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "bakardipt",
+      "level": 2,
+      "xp": 55,
+      "nextXp": 112,
+      "totalXp": 155,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "fsantos88",
       "level": 2,
       "xp": 55,
@@ -120,6 +221,15 @@ window.LEADERBOARD = {
       "badges": [
         "vip"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "kappag4mer",
+      "level": 2,
+      "xp": 55,
+      "nextXp": 112,
+      "totalXp": 155,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -132,28 +242,6 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "bakardipt",
-      "level": 2,
-      "xp": 50,
-      "nextXp": 112,
-      "totalXp": 150,
-      "badges": [
-        "sub"
-      ],
-      "avatar": ""
-    },
-    {
-      "user": "kappag4mer",
-      "level": 2,
-      "xp": 50,
-      "nextXp": 112,
-      "totalXp": 150,
-      "badges": [
-        "sub"
-      ],
-      "avatar": ""
-    },
-    {
       "user": "mr__slean",
       "level": 2,
       "xp": 50,
@@ -162,6 +250,15 @@ window.LEADERBOARD = {
       "badges": [
         "sub"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "chou7093",
+      "level": 2,
+      "xp": 0,
+      "nextXp": 112,
+      "totalXp": 100,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -239,7 +336,34 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "5m_swat",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "ahnuc87",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "ambrosio_apetecia_me_algo",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "amvp17",
       "level": 1,
       "xp": 5,
       "nextXp": 100,
@@ -275,6 +399,17 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "botrixoficial",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "mod"
+      ],
+      "avatar": ""
+    },
+    {
       "user": "d4nizqy",
       "level": 1,
       "xp": 5,
@@ -292,6 +427,17 @@ window.LEADERBOARD = {
       "nextXp": 100,
       "totalXp": 5,
       "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "dixperbro",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "mod"
+      ],
       "avatar": ""
     },
     {
@@ -322,7 +468,37 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "fladzs",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "fringedcliffmmelcny",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "fugly_unicornzzz",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "sub",
+        "vip"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "hugoandre07",
       "level": 1,
       "xp": 5,
       "nextXp": 100,
@@ -341,6 +517,17 @@ window.LEADERBOARD = {
     },
     {
       "user": "jayoak",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "vip"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "jpedrofski",
       "level": 1,
       "xp": 5,
       "nextXp": 100,
@@ -380,6 +567,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "manu12321_",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "mauromauricio93",
       "level": 1,
       "xp": 5,
@@ -392,6 +588,15 @@ window.LEADERBOARD = {
     },
     {
       "user": "meramentebia",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "miguelsearaa",
       "level": 1,
       "xp": 5,
       "nextXp": 100,
@@ -417,6 +622,17 @@ window.LEADERBOARD = {
       "nextXp": 100,
       "totalXp": 5,
       "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "partnernetworkbot",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "mod"
+      ],
       "avatar": ""
     },
     {
@@ -500,6 +716,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "tgu3rra13",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "therealjackoom",
       "level": 1,
       "xp": 5,
@@ -516,6 +741,17 @@ window.LEADERBOARD = {
       "totalXp": 5,
       "badges": [
         "vip"
+      ],
+      "avatar": ""
+    },
+    {
+      "user": "tipmesupport",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [
+        "mod"
       ],
       "avatar": ""
     },
