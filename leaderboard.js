@@ -1,16 +1,25 @@
 window.LEADERBOARD = {
-  "updatedAt": "2025-08-25 12:42",
+  "updatedAt": "2025-08-26 17:22",
   "players": [
     {
       "user": "fablopss",
-      "level": 18,
-      "xp": 457,
-      "nextXp": 687,
-      "totalXp": 2157,
+      "level": 23,
+      "xp": 864,
+      "nextXp": 1210,
+      "totalXp": 3064,
       "badges": [
         "sub",
         "mod"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "mettabe",
+      "level": 14,
+      "xp": 202,
+      "nextXp": 436,
+      "totalXp": 1502,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -70,15 +79,6 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "mettabe",
-      "level": 14,
-      "xp": 87,
-      "nextXp": 436,
-      "totalXp": 1387,
-      "badges": [],
-      "avatar": ""
-    },
-    {
       "user": "mimivives23",
       "level": 14,
       "xp": 87,
@@ -115,6 +115,17 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "a_saika",
+      "level": 4,
+      "xp": 40,
+      "nextXp": 140,
+      "totalXp": 340,
+      "badges": [
+        "mod"
+      ],
+      "avatar": ""
+    },
+    {
       "user": "Anonymous",
       "level": 4,
       "xp": 27,
@@ -126,22 +137,20 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "a_saika",
-      "level": 4,
-      "xp": 15,
-      "nextXp": 140,
-      "totalXp": 315,
-      "badges": [
-        "vip"
-      ],
+      "user": "tiagobrazona25",
+      "level": 3,
+      "xp": 63,
+      "nextXp": 125,
+      "totalXp": 263,
+      "badges": [],
       "avatar": ""
     },
     {
       "user": "brunalavrador",
       "level": 3,
-      "xp": 48,
+      "xp": 53,
       "nextXp": 125,
-      "totalXp": 248,
+      "totalXp": 253,
       "badges": [],
       "avatar": ""
     },
@@ -158,15 +167,6 @@ window.LEADERBOARD = {
     },
     {
       "user": "luc3svenge",
-      "level": 3,
-      "xp": 48,
-      "nextXp": 125,
-      "totalXp": 248,
-      "badges": [],
-      "avatar": ""
-    },
-    {
-      "user": "tiagobrazona25",
       "level": 3,
       "xp": 48,
       "nextXp": 125,
@@ -204,6 +204,33 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "kappag4mer",
+      "level": 3,
+      "xp": 13,
+      "nextXp": 125,
+      "totalXp": 213,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "meramentebia",
+      "level": 3,
+      "xp": 13,
+      "nextXp": 125,
+      "totalXp": 213,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "joaofn_11",
+      "level": 3,
+      "xp": 8,
+      "nextXp": 125,
+      "totalXp": 208,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "bakardipt",
       "level": 2,
       "xp": 55,
@@ -224,15 +251,6 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "kappag4mer",
-      "level": 2,
-      "xp": 55,
-      "nextXp": 112,
-      "totalXp": 155,
-      "badges": [],
-      "avatar": ""
-    },
-    {
       "user": "trickytrickydale",
       "level": 2,
       "xp": 55,
@@ -250,6 +268,15 @@ window.LEADERBOARD = {
       "badges": [
         "sub"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "viewer",
+      "level": 2,
+      "xp": 25,
+      "nextXp": 112,
+      "totalXp": 125,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -309,11 +336,65 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "san7izin",
+      "level": 1,
+      "xp": 20,
+      "nextXp": 100,
+      "totalXp": 20,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "znull17",
       "level": 1,
       "xp": 20,
       "nextXp": 100,
       "totalXp": 20,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "americ4nbl4de",
+      "level": 1,
+      "xp": 15,
+      "nextXp": 100,
+      "totalXp": 15,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "calves070",
+      "level": 1,
+      "xp": 15,
+      "nextXp": 100,
+      "totalXp": 15,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "dark_wolfpt",
+      "level": 1,
+      "xp": 15,
+      "nextXp": 100,
+      "totalXp": 15,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "gato_dasupreme",
+      "level": 1,
+      "xp": 15,
+      "nextXp": 100,
+      "totalXp": 15,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "xuxumontanelas",
+      "level": 1,
+      "xp": 15,
+      "nextXp": 100,
+      "totalXp": 15,
       "badges": [],
       "avatar": ""
     },
@@ -324,6 +405,17 @@ window.LEADERBOARD = {
       "nextXp": 100,
       "totalXp": 10,
       "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "katchmetv",
+      "level": 1,
+      "xp": 10,
+      "nextXp": 100,
+      "totalXp": 10,
+      "badges": [
+        "sub"
+      ],
       "avatar": ""
     },
     {
@@ -373,6 +465,15 @@ window.LEADERBOARD = {
     },
     {
       "user": "ana_de_marvao",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "anniesilva",
       "level": 1,
       "xp": 5,
       "nextXp": 100,
@@ -527,6 +628,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "jonyduarte50",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "jpedrofski",
       "level": 1,
       "xp": 5,
@@ -534,17 +644,6 @@ window.LEADERBOARD = {
       "totalXp": 5,
       "badges": [
         "vip"
-      ],
-      "avatar": ""
-    },
-    {
-      "user": "katchmetv",
-      "level": 1,
-      "xp": 5,
-      "nextXp": 100,
-      "totalXp": 5,
-      "badges": [
-        "sub"
       ],
       "avatar": ""
     },
@@ -584,15 +683,6 @@ window.LEADERBOARD = {
       "badges": [
         "vip"
       ],
-      "avatar": ""
-    },
-    {
-      "user": "meramentebia",
-      "level": 1,
-      "xp": 5,
-      "nextXp": 100,
-      "totalXp": 5,
-      "badges": [],
       "avatar": ""
     },
     {
@@ -668,15 +758,6 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
-      "user": "san7izin",
-      "level": 1,
-      "xp": 5,
-      "nextXp": 100,
-      "totalXp": 5,
-      "badges": [],
-      "avatar": ""
-    },
-    {
       "user": "silvaaontwitch",
       "level": 1,
       "xp": 5,
@@ -695,6 +776,15 @@ window.LEADERBOARD = {
         "sub",
         "mod"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "snowzinha4",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
       "avatar": ""
     },
     {
@@ -756,6 +846,15 @@ window.LEADERBOARD = {
       "avatar": ""
     },
     {
+      "user": "tugazinho11",
+      "level": 1,
+      "xp": 5,
+      "nextXp": 100,
+      "totalXp": 5,
+      "badges": [],
+      "avatar": ""
+    },
+    {
       "user": "wzbot",
       "level": 1,
       "xp": 5,
@@ -793,6 +892,33 @@ window.LEADERBOARD = {
       "badges": [
         "vip"
       ],
+      "avatar": ""
+    },
+    {
+      "user": "fablopss",
+      "level": 1,
+      "xp": 0,
+      "nextXp": 100,
+      "totalXp": 0,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "fablopSs",
+      "level": 1,
+      "xp": 0,
+      "nextXp": 100,
+      "totalXp": 0,
+      "badges": [],
+      "avatar": ""
+    },
+    {
+      "user": "teste teste",
+      "level": 1,
+      "xp": 0,
+      "nextXp": 100,
+      "totalXp": 0,
+      "badges": [],
       "avatar": ""
     }
   ]
